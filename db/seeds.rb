@@ -1,3 +1,5 @@
+OrderProduct.destroy_all
+Order.destroy_all
 Product.destroy_all
 ProductCategory.destroy_all
 Restaurant.destroy_all

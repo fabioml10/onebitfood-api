@@ -10,6 +10,8 @@ class CreateRestaurants < ActiveRecord::Migration[6.1]
       t.string :state
       t.string :number
       t.string :complement
+      t.string :cep
+      t.string :reference
       t.references :category, null: false, foreign_key: true
       t.integer :status, default: 0
 
