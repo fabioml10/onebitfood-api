@@ -6,4 +6,6 @@ class Restaurant < ApplicationRecord
   has_one_attached :image
 
   validates :name, :status, :delivery_tax, :city, :neighborhood, :street, :number, presence: true
+
+  enum status: { open: 0 }
 end

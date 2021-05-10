@@ -100,9 +100,11 @@ ActiveRecord::Schema.define(version: 2021_05_10_124634) do
     t.string "city"
     t.string "street"
     t.string "neighborhood"
+    t.string "state"
     t.string "number"
     t.string "complement"
     t.bigint "category_id", null: false
+    t.integer "status", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["category_id"], name: "index_restaurants_on_category_id"
