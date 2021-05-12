@@ -13,6 +13,8 @@ json.reference restaurant.reference
 json.cep restaurant.cep
 json.image_url polymorphic_url(restaurant.image) if restaurant.image.attached?
 
+json.category_title restaurant.category.title
+
 json.product_categories restaurant.product_categories do |product_category|
   json.partial! 'product_categories/product_category', product_category: product_category
 end
